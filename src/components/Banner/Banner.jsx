@@ -1,0 +1,52 @@
+import googlePlayStore from "../../assets/google-play-store.png";
+import appleAppStore from "../../assets/apple-app-store.png";
+import bannerImage from "../../assets/hero.png";
+
+const Banner = () => {
+    return (
+        <div className="flex flex-col justify-center text-center my-20">
+            <h1 className="text-[#001931] text-7xl font-semibold mb-6">We Build <br /><span className="bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)] bg-clip-text text-transparent">Productive</span> Apps</h1>
+            <p className="text-[#627382] mb-10">At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
+
+            <div className="flex justify-center gap-4 mb-10">
+                <button className="btn bg-white text-black border-[#e5e5e5] py-6 px-[22px] gap-4">
+                    <img className="w-8 h-8" src={googlePlayStore} alt="google play store" />
+                    Google Play
+                </button>
+
+                <button className="btn bg-white text-black border-[#e5e5e5] py-6 px-[22px] gap-4">
+                    <img className="w-8 h-8" src={appleAppStore} alt="google play store" />
+                    App Store
+                </button>
+            </div>
+
+            <img className="w-[50%] text-center flex mx-auto" src={bannerImage} alt="banner image" />
+
+            <div className="bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)] py-20">
+                <h2 className="font-bold text-white text-5xl mb-10">Trusted by Millions, Built for You</h2>
+
+                <div className="stats [&>.stat]:border-0 text-white">
+                    <div className="stat place-items-center">
+                        <div className="stat-title text-white">Total Downloads</div>
+                        <div className="stat-value">29.6M</div>
+                        <div className="stat-desc text-white">21% more than last month</div>
+                    </div>
+
+                    <div className="stat place-items-center">
+                        <div className="stat-title text-white">Total Reviews</div>
+                        <div className="stat-value text-white">906K</div>
+                        <div className="stat-desc text-white">46% more than last month</div>
+                    </div>
+
+                    <div className="stat place-items-center">
+                        <div className="stat-title text-white">Active Apps</div>
+                        <div className="stat-value">132+</div>
+                        <div className="stat-desc text-white">31 more will Launch</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Banner;
