@@ -1,0 +1,506 @@
+[
+    {
+        "image": "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d",
+        "title": "Productivity Pro",
+        "companyName": "Taskify Labs",
+        "id": 1,
+        "description": "A minimalist task management app that helps teams stay organized and productive.",
+        "size": 42,
+        "reviews": 1250,
+        "ratingAvg": 4.6,
+        "downloads": 230000,
+        "ratings": [
+            { "name": "1 star", "count": 45 },
+            { "name": "2 star", "count": 80 },
+            { "name": "3 star", "count": 180 },
+            { "name": "4 star", "count": 450 },
+            { "name": "5 star", "count": 495 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+        "title": "CloudDesk",
+        "companyName": "Nimbus Technologies",
+        "id": 2,
+        "description": "Cloud-based collaboration software for document editing and real-time communication.",
+        "size": 85,
+        "reviews": 980,
+        "ratingAvg": 4.3,
+        "downloads": 187000,
+        "ratings": [
+            { "name": "1 star", "count": 60 },
+            { "name": "2 star", "count": 70 },
+            { "name": "3 star", "count": 190 },
+            { "name": "4 star", "count": 380 },
+            { "name": "5 star", "count": 280 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+        "title": "CodeFlow",
+        "companyName": "DevNexus",
+        "id": 3,
+        "description": "An advanced IDE for modern developers with AI-powered autocomplete and debugging tools.",
+        "size": 125,
+        "reviews": 2040,
+        "ratingAvg": 4.8,
+        "downloads": 520000,
+        "ratings": [
+            { "name": "1 star", "count": 90 },
+            { "name": "2 star", "count": 60 },
+            { "name": "3 star", "count": 140 },
+            { "name": "4 star", "count": 460 },
+            { "name": "5 star", "count": 1290 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
+        "title": "FitTrack",
+        "companyName": "VitalCore Health",
+        "id": 4,
+        "description": "Track workouts, calories, and sleep patterns with real-time analytics and goal tracking.",
+        "size": 58,
+        "reviews": 1600,
+        "ratingAvg": 4.5,
+        "downloads": 430000,
+        "ratings": [
+            { "name": "1 star", "count": 75 },
+            { "name": "2 star", "count": 90 },
+            { "name": "3 star", "count": 210 },
+            { "name": "4 star", "count": 480 },
+            { "name": "5 star", "count": 745 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1493612276216-ee3925520721",
+        "title": "PhotoCraft",
+        "companyName": "PixelForge Studio",
+        "id": 5,
+        "description": "Professional-grade photo editing app with AI filters, layers, and HDR effects.",
+        "size": 240,
+        "reviews": 2100,
+        "ratingAvg": 4.7,
+        "downloads": 780000,
+        "ratings": [
+            { "name": "1 star", "count": 95 },
+            { "name": "2 star", "count": 120 },
+            { "name": "3 star", "count": 250 },
+            { "name": "4 star", "count": 600 },
+            { "name": "5 star", "count": 1035 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+        "title": "EduSphere",
+        "companyName": "Learnova Inc.",
+        "id": 6,
+        "description": "Interactive e-learning platform offering personalized courses and AI-based assessments.",
+        "size": 180,
+        "reviews": 1320,
+        "ratingAvg": 4.4,
+        "downloads": 390000,
+        "ratings": [
+            { "name": "1 star", "count": 70 },
+            { "name": "2 star", "count": 100 },
+            { "name": "3 star", "count": 250 },
+            { "name": "4 star", "count": 460 },
+            { "name": "5 star", "count": 440 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd",
+        "title": "MarketPilot",
+        "companyName": "FinEdge Systems",
+        "id": 7,
+        "description": "Advanced stock market analytics tool with predictive insights and real-time alerts.",
+        "size": 95,
+        "reviews": 890,
+        "ratingAvg": 4.2,
+        "downloads": 310000,
+        "ratings": [
+            { "name": "1 star", "count": 55 },
+            { "name": "2 star", "count": 95 },
+            { "name": "3 star", "count": 200 },
+            { "name": "4 star", "count": 290 },
+            { "name": "5 star", "count": 250 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7",
+        "title": "ShopEase",
+        "companyName": "NextGen Retail",
+        "id": 8,
+        "description": "Smart e-commerce platform with AI recommendations, cart insights, and dynamic pricing.",
+        "size": 210,
+        "reviews": 1750,
+        "ratingAvg": 4.6,
+        "downloads": 680000,
+        "ratings": [
+            { "name": "1 star", "count": 85 },
+            { "name": "2 star", "count": 110 },
+            { "name": "3 star", "count": 230 },
+            { "name": "4 star", "count": 520 },
+            { "name": "5 star", "count": 805 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1556157382-97eda2d62296",
+        "title": "NoteVerse",
+        "companyName": "MindFlow Labs",
+        "id": 9,
+        "description": "A cloud-synced note-taking app with handwriting recognition and offline mode.",
+        "size": 76,
+        "reviews": 940,
+        "ratingAvg": 4.3,
+        "downloads": 320000,
+        "ratings": [
+            { "name": "1 star", "count": 55 },
+            { "name": "2 star", "count": 85 },
+            { "name": "3 star", "count": 210 },
+            { "name": "4 star", "count": 350 },
+            { "name": "5 star", "count": 240 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+        "title": "AudioZen",
+        "companyName": "SonicWave Studio",
+        "id": 10,
+        "description": "Immerse yourself in 3D soundscapes and personalized audio tuning for every environment.",
+        "size": 132,
+        "reviews": 1600,
+        "ratingAvg": 4.7,
+        "downloads": 540000,
+        "ratings": [
+            { "name": "1 star", "count": 80 },
+            { "name": "2 star", "count": 110 },
+            { "name": "3 star", "count": 210 },
+            { "name": "4 star", "count": 500 },
+            { "name": "5 star", "count": 700 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1535223289827-42f1e9919769",
+        "title": "SmartHome Plus",
+        "companyName": "Domotics Corp",
+        "id": 11,
+        "description": "Control all your smart home devices from one intuitive and secure dashboard.",
+        "size": 190,
+        "reviews": 1200,
+        "ratingAvg": 4.5,
+        "downloads": 410000,
+        "ratings": [
+            { "name": "1 star", "count": 60 },
+            { "name": "2 star", "count": 90 },
+            { "name": "3 star", "count": 210 },
+            { "name": "4 star", "count": 400 },
+            { "name": "5 star", "count": 440 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1544717302-de2939b7ef71",
+        "title": "FinanceIQ",
+        "companyName": "NovaLedger",
+        "id": 12,
+        "description": "AI-based personal finance tracker for budgeting, saving, and smart investments.",
+        "size": 110,
+        "reviews": 1950,
+        "ratingAvg": 4.6,
+        "downloads": 620000,
+        "ratings": [
+            { "name": "1 star", "count": 95 },
+            { "name": "2 star", "count": 130 },
+            { "name": "3 star", "count": 210 },
+            { "name": "4 star", "count": 520 },
+            { "name": "5 star", "count": 995 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+        "title": "DevMate",
+        "companyName": "Codeverse",
+        "id": 13,
+        "description": "Collaborative code editor with real-time pair programming and Git sync.",
+        "size": 142,
+        "reviews": 870,
+        "ratingAvg": 4.4,
+        "downloads": 265000,
+        "ratings": [
+            { "name": "1 star", "count": 40 },
+            { "name": "2 star", "count": 90 },
+            { "name": "3 star", "count": 170 },
+            { "name": "4 star", "count": 320 },
+            { "name": "5 star", "count": 250 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1564865878688-9a2444440422",
+        "title": "FoodHub",
+        "companyName": "QuickEats Network",
+        "id": 14,
+        "description": "Order food from nearby restaurants with live delivery tracking and instant offers.",
+        "size": 185,
+        "reviews": 2220,
+        "ratingAvg": 4.5,
+        "downloads": 890000,
+        "ratings": [
+            { "name": "1 star", "count": 150 },
+            { "name": "2 star", "count": 130 },
+            { "name": "3 star", "count": 300 },
+            { "name": "4 star", "count": 650 },
+            { "name": "5 star", "count": 990 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1493612276216-ee3925520721",
+        "title": "PhotoSnap",
+        "companyName": "LightFrame Inc.",
+        "id": 15,
+        "description": "Instantly capture, edit, and share beautiful images with AI filters and presets.",
+        "size": 212,
+        "reviews": 1420,
+        "ratingAvg": 4.3,
+        "downloads": 470000,
+        "ratings": [
+            { "name": "1 star", "count": 60 },
+            { "name": "2 star", "count": 120 },
+            { "name": "3 star", "count": 220 },
+            { "name": "4 star", "count": 480 },
+            { "name": "5 star", "count": 540 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1581091215367-59ab6b86a1a9",
+        "title": "HealthSync",
+        "companyName": "WellTech",
+        "id": 16,
+        "description": "Monitor your heart rate, stress levels, and steps with AI-driven insights.",
+        "size": 156,
+        "reviews": 1580,
+        "ratingAvg": 4.4,
+        "downloads": 520000,
+        "ratings": [
+            { "name": "1 star", "count": 90 },
+            { "name": "2 star", "count": 120 },
+            { "name": "3 star", "count": 240 },
+            { "name": "4 star", "count": 500 },
+            { "name": "5 star", "count": 630 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1543269865-cbf427effbad",
+        "title": "CareerBridge",
+        "companyName": "HireHub Global",
+        "id": 17,
+        "description": "Smart job search and networking platform connecting professionals and employers.",
+        "size": 133,
+        "reviews": 1120,
+        "ratingAvg": 4.2,
+        "downloads": 340000,
+        "ratings": [
+            { "name": "1 star", "count": 70 },
+            { "name": "2 star", "count": 100 },
+            { "name": "3 star", "count": 220 },
+            { "name": "4 star", "count": 420 },
+            { "name": "5 star", "count": 310 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1522199710521-72d69614c702",
+        "title": "BookVerse",
+        "companyName": "InkWorks",
+        "id": 18,
+        "description": "Digital library with millions of books, personalized recommendations, and offline mode.",
+        "size": 250,
+        "reviews": 2100,
+        "ratingAvg": 4.8,
+        "downloads": 960000,
+        "ratings": [
+            { "name": "1 star", "count": 120 },
+            { "name": "2 star", "count": 130 },
+            { "name": "3 star", "count": 190 },
+            { "name": "4 star", "count": 480 },
+            { "name": "5 star", "count": 1180 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1573164713988-8665fc963095",
+        "title": "Meetly",
+        "companyName": "Connectly Inc.",
+        "id": 19,
+        "description": "Video conferencing platform with low latency and real-time AI captioning.",
+        "size": 145,
+        "reviews": 1340,
+        "ratingAvg": 4.5,
+        "downloads": 530000,
+        "ratings": [
+            { "name": "1 star", "count": 90 },
+            { "name": "2 star", "count": 120 },
+            { "name": "3 star", "count": 220 },
+            { "name": "4 star", "count": 400 },
+            { "name": "5 star", "count": 510 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7",
+        "title": "ShopSmart",
+        "companyName": "RetailX Labs",
+        "id": 20,
+        "description": "Online shopping assistant with price comparisons, coupons, and smart alerts.",
+        "size": 210,
+        "reviews": 1680,
+        "ratingAvg": 4.6,
+        "downloads": 620000,
+        "ratings": [
+            { "name": "1 star", "count": 100 },
+            { "name": "2 star", "count": 120 },
+            { "name": "3 star", "count": 240 },
+            { "name": "4 star", "count": 480 },
+            { "name": "5 star", "count": 740 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+        "title": "PlanIt",
+        "companyName": "Orbit Solutions",
+        "id": 21,
+        "description": "All-in-one event planning tool for corporate and personal gatherings.",
+        "size": 120,
+        "reviews": 910,
+        "ratingAvg": 4.2,
+        "downloads": 275000,
+        "ratings": [
+            { "name": "1 star", "count": 40 },
+            { "name": "2 star", "count": 85 },
+            { "name": "3 star", "count": 200 },
+            { "name": "4 star", "count": 360 },
+            { "name": "5 star", "count": 225 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+        "title": "Learnify",
+        "companyName": "Skillverse",
+        "id": 22,
+        "description": "Online learning platform offering micro-courses and real project challenges.",
+        "size": 188,
+        "reviews": 1430,
+        "ratingAvg": 4.4,
+        "downloads": 390000,
+        "ratings": [
+            { "name": "1 star", "count": 60 },
+            { "name": "2 star", "count": 120 },
+            { "name": "3 star", "count": 260 },
+            { "name": "4 star", "count": 480 },
+            { "name": "5 star", "count": 510 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1485217988980-11786ced9454",
+        "title": "TravelGo",
+        "companyName": "GlobeTrek",
+        "id": 23,
+        "description": "Book flights, hotels, and experiences at the lowest price — all in one place.",
+        "size": 240,
+        "reviews": 2220,
+        "ratingAvg": 4.7,
+        "downloads": 970000,
+        "ratings": [
+            { "name": "1 star", "count": 120 },
+            { "name": "2 star", "count": 140 },
+            { "name": "3 star", "count": 220 },
+            { "name": "4 star", "count": 520 },
+            { "name": "5 star", "count": 1220 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1521747116042-5a810fda9664",
+        "title": "TaskPilot",
+        "companyName": "ZenWork",
+        "id": 24,
+        "description": "Task automation platform to streamline workflows and eliminate manual effort.",
+        "size": 130,
+        "reviews": 1010,
+        "ratingAvg": 4.3,
+        "downloads": 300000,
+        "ratings": [
+            { "name": "1 star", "count": 50 },
+            { "name": "2 star", "count": 90 },
+            { "name": "3 star", "count": 210 },
+            { "name": "4 star", "count": 360 },
+            { "name": "5 star", "count": 300 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
+        "title": "EcoTrack",
+        "companyName": "GreenSphere",
+        "id": 25,
+        "description": "Monitor your carbon footprint and get daily eco-friendly lifestyle recommendations.",
+        "size": 89,
+        "reviews": 890,
+        "ratingAvg": 4.2,
+        "downloads": 270000,
+        "ratings": [
+            { "name": "1 star", "count": 40 },
+            { "name": "2 star", "count": 70 },
+            { "name": "3 star", "count": 200 },
+            { "name": "4 star", "count": 320 },
+            { "name": "5 star", "count": 260 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1504805572947-34fad45aed93",
+        "title": "GameHub",
+        "companyName": "NextPlay Studios",
+        "id": 26,
+        "description": "Discover, play, and stream thousands of games with social leaderboards.",
+        "size": 290,
+        "reviews": 2630,
+        "ratingAvg": 4.8,
+        "downloads": 1250000,
+        "ratings": [
+            { "name": "1 star", "count": 140 },
+            { "name": "2 star", "count": 150 },
+            { "name": "3 star", "count": 280 },
+            { "name": "4 star", "count": 550 },
+            { "name": "5 star", "count": 1510 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1532614338840-ab30cf10ed36",
+        "title": "MindEase",
+        "companyName": "TranquilTech",
+        "id": 27,
+        "description": "Meditation and relaxation app designed to reduce anxiety and improve sleep.",
+        "size": 122,
+        "reviews": 1750,
+        "ratingAvg": 4.7,
+        "downloads": 650000,
+        "ratings": [
+            { "name": "1 star", "count": 85 },
+            { "name": "2 star", "count": 100 },
+            { "name": "3 star", "count": 230 },
+            { "name": "4 star", "count": 480 },
+            { "name": "5 star", "count": 855 }
+        ]
+    },
+    {
+        "image": "https://images.unsplash.com/photo-1533743983669-94fa5c4338ec",
+        "title": "WeatherIQ",
+        "companyName": "SkyNet Systems",
+        "id": 28,
+        "description": "Hyperlocal weather forecasting app powered by AI and satellite data.",
+        "size": 104,
+        "reviews": 1290,
+        "ratingAvg": 4.5,
+        "downloads": 480000,
+        "ratings": [
+            { "name": "1 star", "count": 70 },
+            { "name": "2 star", "count": 100 },
+            { "name": "3 star", "count": 220 },
+            { "name": "4 star", "count": 430 },
+            { "name": "5 star", "count": 470 }
+        ]
+    }
+]
