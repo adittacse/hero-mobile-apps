@@ -5,8 +5,8 @@ import bannerImage from "../../assets/hero.png";
 const Banner = () => {
     return (
         <div className="flex flex-col justify-center text-center my-20">
-            <h1 className="text-[#001931] text-7xl font-semibold mb-6">We Build <br /><span className="bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)] bg-clip-text text-transparent">Productive</span> Apps</h1>
-            <p className="text-[#627382] mb-10">At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
+            <h1 className="text-[#001931] text-7xl font-semibold mb-6">We Build <br /><span className="bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)] bg-clip-text text-transparent px-3.5 md:px-0">Productive</span> Apps</h1>
+            <p className="text-[#627382] mb-10 px-3.5 md:px-0">At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
 
             <div className="flex justify-center gap-4 mb-10">
                 <button className="btn bg-white text-black border-[#e5e5e5] py-6 px-[22px] gap-4">
@@ -20,12 +20,12 @@ const Banner = () => {
                 </button>
             </div>
 
-            <img className="w-[50%] text-center flex mx-auto" src={bannerImage} alt="banner image" />
+            <img className="w-[90%] md:w-[60%] text-center flex mx-auto" src={bannerImage} alt="banner image" />
 
-            <div className="bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)] py-20">
+            <div className="bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)] py-20 px-3.5 md:px-0">
                 <h2 className="font-bold text-white text-5xl mb-10">Trusted by Millions, Built for You</h2>
 
-                <div className="stats [&>.stat]:border-0 text-white">
+                <div className="md:stats [&>.stat]:border-0 text-white">
                     <div className="stat place-items-center">
                         <div className="stat-title text-white">Total Downloads</div>
                         <div className="stat-value">29.6M</div>
