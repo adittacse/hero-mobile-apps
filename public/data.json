@@ -1,6 +1,6 @@
 [
     {
-        "image": "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d",
+        "image": "https://i.ibb.co.com/6RN8gD68/Productivity-Pro.jpg",
         "title": "Productivity Pro",
         "companyName": "Taskify Labs",
         "id": 1,
@@ -8,7 +8,7 @@
         "size": 42,
         "reviews": 1250,
         "ratingAvg": 4.6,
-        "downloads": 230000,
+        "downloads": 23,
         "ratings": [
             { "name": "1 star", "count": 45 },
             { "name": "2 star", "count": 80 },
@@ -18,7 +18,7 @@
         ]
     },
     {
-        "image": "https://images.unsplash.com/photo-1519389950473-47ba0277781c",
+        "image": "https://i.ibb.co.com/XrnwzdMT/Cloud-Desk.jpg",
         "title": "CloudDesk",
         "companyName": "Nimbus Technologies",
         "id": 2,
@@ -26,7 +26,7 @@
         "size": 85,
         "reviews": 980,
         "ratingAvg": 4.3,
-        "downloads": 187000,
+        "downloads": 18,
         "ratings": [
             { "name": "1 star", "count": 60 },
             { "name": "2 star", "count": 70 },
@@ -44,7 +44,7 @@
         "size": 125,
         "reviews": 2040,
         "ratingAvg": 4.8,
-        "downloads": 520000,
+        "downloads": 52,
         "ratings": [
             { "name": "1 star", "count": 90 },
             { "name": "2 star", "count": 60 },
@@ -54,7 +54,7 @@
         ]
     },
     {
-        "image": "https://images.unsplash.com/photo-1492724441997-5dc865305da7",
+        "image": "https://i.ibb.co.com/yGwdcN6/FitTrack.png",
         "title": "FitTrack",
         "companyName": "VitalCore Health",
         "id": 4,
@@ -62,7 +62,7 @@
         "size": 58,
         "reviews": 1600,
         "ratingAvg": 4.5,
-        "downloads": 430000,
+        "downloads": 43,
         "ratings": [
             { "name": "1 star", "count": 75 },
             { "name": "2 star", "count": 90 },
@@ -72,7 +72,7 @@
         ]
     },
     {
-        "image": "https://images.unsplash.com/photo-1493612276216-ee3925520721",
+        "image": "https://i.ibb.co.com/spVvxk4R/Photo-Craft.png",
         "title": "PhotoCraft",
         "companyName": "PixelForge Studio",
         "id": 5,
@@ -80,7 +80,7 @@
         "size": 240,
         "reviews": 2100,
         "ratingAvg": 4.7,
-        "downloads": 780000,
+        "downloads": 78,
         "ratings": [
             { "name": "1 star", "count": 95 },
             { "name": "2 star", "count": 120 },
@@ -90,7 +90,7 @@
         ]
     },
     {
-        "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f",
+        "image": "https://i.ibb.co.com/0jXKPyMB/Edu-Sphere.webp",
         "title": "EduSphere",
         "companyName": "Learnova Inc.",
         "id": 6,
@@ -98,7 +98,7 @@
         "size": 180,
         "reviews": 1320,
         "ratingAvg": 4.4,
-        "downloads": 390000,
+        "downloads": 39,
         "ratings": [
             { "name": "1 star", "count": 70 },
             { "name": "2 star", "count": 100 },
@@ -108,7 +108,7 @@
         ]
     },
     {
-        "image": "https://images.unsplash.com/photo-1542744095-fcf48d80b0fd",
+        "image": "https://i.ibb.co.com/G40DygWm/Market-Pilot.jpg",
         "title": "MarketPilot",
         "companyName": "FinEdge Systems",
         "id": 7,
@@ -116,7 +116,7 @@
         "size": 95,
         "reviews": 890,
         "ratingAvg": 4.2,
-        "downloads": 310000,
+        "downloads": 31,
         "ratings": [
             { "name": "1 star", "count": 55 },
             { "name": "2 star", "count": 95 },
@@ -126,7 +126,7 @@
         ]
     },
     {
-        "image": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7",
+        "image": "https://i.ibb.co.com/1GxV2qyD/ShopEase.png",
         "title": "ShopEase",
         "companyName": "NextGen Retail",
         "id": 8,
@@ -134,7 +134,7 @@
         "size": 210,
         "reviews": 1750,
         "ratingAvg": 4.6,
-        "downloads": 680000,
+        "downloads": 68,
         "ratings": [
             { "name": "1 star", "count": 85 },
             { "name": "2 star", "count": 110 },
@@ -152,7 +152,7 @@
         "size": 76,
         "reviews": 940,
         "ratingAvg": 4.3,
-        "downloads": 320000,
+        "downloads": 32,
         "ratings": [
             { "name": "1 star", "count": 55 },
             { "name": "2 star", "count": 85 },
@@ -162,7 +162,7 @@
         ]
     },
     {
-        "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e",
+        "image": "https://i.ibb.co.com/Vc4Gr0Wh/AudioZen.jpg",
         "title": "AudioZen",
         "companyName": "SonicWave Studio",
         "id": 10,
@@ -170,7 +170,7 @@
         "size": 132,
         "reviews": 1600,
         "ratingAvg": 4.7,
-        "downloads": 540000,
+        "downloads": 54,
         "ratings": [
             { "name": "1 star", "count": 80 },
             { "name": "2 star", "count": 110 },
@@ -188,7 +188,7 @@
         "size": 190,
         "reviews": 1200,
         "ratingAvg": 4.5,
-        "downloads": 410000,
+        "downloads": 41,
         "ratings": [
             { "name": "1 star", "count": 60 },
             { "name": "2 star", "count": 90 },
@@ -206,7 +206,7 @@
         "size": 110,
         "reviews": 1950,
         "ratingAvg": 4.6,
-        "downloads": 620000,
+        "downloads": 62,
         "ratings": [
             { "name": "1 star", "count": 95 },
             { "name": "2 star", "count": 130 },
@@ -224,7 +224,7 @@
         "size": 142,
         "reviews": 870,
         "ratingAvg": 4.4,
-        "downloads": 265000,
+        "downloads": 26,
         "ratings": [
             { "name": "1 star", "count": 40 },
             { "name": "2 star", "count": 90 },
@@ -242,7 +242,7 @@
         "size": 185,
         "reviews": 2220,
         "ratingAvg": 4.5,
-        "downloads": 890000,
+        "downloads": 27,
         "ratings": [
             { "name": "1 star", "count": 150 },
             { "name": "2 star", "count": 130 },
@@ -260,7 +260,7 @@
         "size": 212,
         "reviews": 1420,
         "ratingAvg": 4.3,
-        "downloads": 470000,
+        "downloads": 23,
         "ratings": [
             { "name": "1 star", "count": 60 },
             { "name": "2 star", "count": 120 },
@@ -278,7 +278,7 @@
         "size": 156,
         "reviews": 1580,
         "ratingAvg": 4.4,
-        "downloads": 520000,
+        "downloads": 52,
         "ratings": [
             { "name": "1 star", "count": 90 },
             { "name": "2 star", "count": 120 },
@@ -296,7 +296,7 @@
         "size": 133,
         "reviews": 1120,
         "ratingAvg": 4.2,
-        "downloads": 340000,
+        "downloads": 34,
         "ratings": [
             { "name": "1 star", "count": 70 },
             { "name": "2 star", "count": 100 },
@@ -314,7 +314,7 @@
         "size": 250,
         "reviews": 2100,
         "ratingAvg": 4.8,
-        "downloads": 960000,
+        "downloads": 44,
         "ratings": [
             { "name": "1 star", "count": 120 },
             { "name": "2 star", "count": 130 },
@@ -332,7 +332,7 @@
         "size": 145,
         "reviews": 1340,
         "ratingAvg": 4.5,
-        "downloads": 530000,
+        "downloads": 53,
         "ratings": [
             { "name": "1 star", "count": 90 },
             { "name": "2 star", "count": 120 },
@@ -350,7 +350,7 @@
         "size": 210,
         "reviews": 1680,
         "ratingAvg": 4.6,
-        "downloads": 620000,
+        "downloads": 9,
         "ratings": [
             { "name": "1 star", "count": 100 },
             { "name": "2 star", "count": 120 },
@@ -368,7 +368,7 @@
         "size": 120,
         "reviews": 910,
         "ratingAvg": 4.2,
-        "downloads": 275000,
+        "downloads": 27,
         "ratings": [
             { "name": "1 star", "count": 40 },
             { "name": "2 star", "count": 85 },
@@ -386,7 +386,7 @@
         "size": 188,
         "reviews": 1430,
         "ratingAvg": 4.4,
-        "downloads": 390000,
+        "downloads": 39,
         "ratings": [
             { "name": "1 star", "count": 60 },
             { "name": "2 star", "count": 120 },
@@ -404,7 +404,7 @@
         "size": 240,
         "reviews": 2220,
         "ratingAvg": 4.7,
-        "downloads": 970000,
+        "downloads": 26,
         "ratings": [
             { "name": "1 star", "count": 120 },
             { "name": "2 star", "count": 140 },
@@ -422,7 +422,7 @@
         "size": 130,
         "reviews": 1010,
         "ratingAvg": 4.3,
-        "downloads": 300000,
+        "downloads": 30,
         "ratings": [
             { "name": "1 star", "count": 50 },
             { "name": "2 star", "count": 90 },
@@ -440,7 +440,7 @@
         "size": 89,
         "reviews": 890,
         "ratingAvg": 4.2,
-        "downloads": 270000,
+        "downloads": 27,
         "ratings": [
             { "name": "1 star", "count": 40 },
             { "name": "2 star", "count": 70 },
@@ -458,7 +458,7 @@
         "size": 290,
         "reviews": 2630,
         "ratingAvg": 4.8,
-        "downloads": 1250000,
+        "downloads": 12,
         "ratings": [
             { "name": "1 star", "count": 140 },
             { "name": "2 star", "count": 150 },
@@ -476,7 +476,7 @@
         "size": 122,
         "reviews": 1750,
         "ratingAvg": 4.7,
-        "downloads": 650000,
+        "downloads": 40,
         "ratings": [
             { "name": "1 star", "count": 85 },
             { "name": "2 star", "count": 100 },
@@ -494,7 +494,7 @@
         "size": 104,
         "reviews": 1290,
         "ratingAvg": 4.5,
-        "downloads": 480000,
+        "downloads": 48,
         "ratings": [
             { "name": "1 star", "count": 70 },
             { "name": "2 star", "count": 100 },

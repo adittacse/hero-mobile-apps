@@ -5,7 +5,7 @@ import logo from "../../assets/logo.png";
 const Header = () => {
     const link = <>
         <Link to="/" className="mr-8"><li>Home</li></Link>
-        <Link className="mr-8"><li>Apps</li></Link>
+        <Link to="/apps" className="mr-8"><li>Apps</li></Link>
         <Link className=""><li>Installation</li></Link>
     </>
     
@@ -31,7 +31,8 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link target="_blank" to="https://github.com/adittacse" className="btn font-semibold text-white bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)]"><SiGithub className="w-5 h-5 mr-2.5" /> Contribute
+                <Link target="_blank" to="https://github.com/adittacse" className="btn font-semibold text-white bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)] rounded-sm">
+                    <SiGithub className="w-5 h-5 mr-2.5" /> Contribute
                 </Link>
             </div>
         </div>

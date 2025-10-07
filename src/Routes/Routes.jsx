@@ -2,6 +2,8 @@ import { createBrowserRouter } from "react-router";
 import Root from "../pages/Root/Root";
 import Home from "../pages/Home/Home";
 
+const dataPromise = fetch("/data.json").then(res => res.json());
+
 const router = createBrowserRouter([
     {
         path: "/",
@@ -10,7 +12,12 @@ const router = createBrowserRouter([
             {
                 index: true,
                 path: "/",
-                element: <Home></Home>
+                // loader: fetch("/data.json").then(res => res.json()),
+                element: <Home dataPromise={dataPromise}></Home>
+            },
+            {
+                path: "apps",
+                element: <p>Apps page</p>
             }
         ]
     },
