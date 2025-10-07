@@ -1,9 +1,8 @@
-import React, { Suspense, use } from 'react';
+import { Suspense } from 'react';
 import AppCard from '../AppCard/AppCard';
 import { Link } from 'react-router';
 
-const TrendingApps = ({ dataPromise }) => {
-    const data = use(dataPromise);
+const TrendingApps = ({ data }) => {
     const firstEightData = data.slice(0, 8);
 
     return (

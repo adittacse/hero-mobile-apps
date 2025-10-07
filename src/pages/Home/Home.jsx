@@ -1,11 +1,14 @@
+import { useLoaderData } from 'react-router';
 import Banner from '../../components/Banner/Banner';
 import TrendingApps from '../../components/TrendingApps/TrendingApps';
 
-const Home = ({ dataPromise }) => {
+const Home = () => {
+    const data = useLoaderData();
+
     return (
         <div>
             <Banner></Banner>
-            <TrendingApps dataPromise={dataPromise}></TrendingApps>
+            <TrendingApps data={data}></TrendingApps>
         </div>
     );
 };

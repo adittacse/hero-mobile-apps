@@ -1,8 +1,7 @@
 import { createBrowserRouter } from "react-router";
 import Root from "../pages/Root/Root";
 import Home from "../pages/Home/Home";
-
-const dataPromise = fetch("/data.json").then(res => res.json());
+import Apps from "../pages/Apps/Apps";
 
 const router = createBrowserRouter([
     {
@@ -12,12 +11,13 @@ const router = createBrowserRouter([
             {
                 index: true,
                 path: "/",
-                // loader: fetch("/data.json").then(res => res.json()),
-                element: <Home dataPromise={dataPromise}></Home>
+                loader: () => fetch("/data.json").then(res => res.json()),
+                element: <Home></Home>
             },
             {
                 path: "apps",
-                element: <p>Apps page</p>
+                loader:  () =>  fetch("https://raw.githubusercontent.com/adittacse/bottles-data/refs/heads/main/AppsData.json").then(res => res.json()),
+                element: <Apps></Apps>
             }
         ]
     },
