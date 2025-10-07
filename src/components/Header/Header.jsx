@@ -10,7 +10,7 @@ const Header = () => {
     </>
     
     return (
-        <div className="navbar bg-base-100 shadow-sm px-20">
+        <div className="navbar bg-base-100 shadow-sm px-4 md:px-10 lg:px-20">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,8 +31,7 @@ const Header = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link target="_blank" to="https://github.com/adittacse">
-                    <a className="btn font-semibold text-white bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)]"><SiGithub className="w-5 h-5 mr-2.5" /> Contribute</a>
+                <Link target="_blank" to="https://github.com/adittacse" className="btn font-semibold text-white bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)]"><SiGithub className="w-5 h-5 mr-2.5" /> Contribute
                 </Link>
             </div>
         </div>
