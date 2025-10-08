@@ -54,49 +54,14 @@ const checkStoredDB = (id) => {
     }
 }
 
-// add to wishlist
-// const getWishlistBook = () => {
-//     const wishlistBookSTR = localStorage.getItem("wishlist");
+const storedAppInDB = () => {
+    return getStoredApps();
+}
 
-//     if (wishlistBookSTR) {
-//         const wishlistBookData = JSON.parse(wishlistBookSTR);
-//         return wishlistBookData;
-//     } else {
-//         return [];
-//     }
-// }
+const removeFromLS = (id) => {
+    const installedApps = getStoredApps();
+    const apps = installedApps.filter(appId => parseInt(appId) !== id);
+    localStorage.setItem("appsList", JSON.stringify(apps));
+}
 
-// const addToWishlistDB = (id) => {
-//     const wishlistBookData = getWishlistBook();
-
-//     if (wishlistBookData.includes(id)) {
-//         Swal.fire({
-//             title: "Book already in Wishlist",
-//             showClass: {
-//                 popup: `
-//                 animate__animated
-//                 animate__fadeInUp
-//                 animate__faster
-//                 `
-//             },
-//             hideClass: {
-//                 popup: `
-//                 animate__animated
-//                 animate__fadeOutDown
-//                 animate__faster
-//                 `
-//             }
-//         });
-//     } else {
-//         wishlistBookData.push(id);
-//         const data = JSON.stringify(wishlistBookData);
-//         localStorage.setItem("wishlist", data);
-//         Swal.fire({
-//             title: "Added to Wishlist",
-//             icon: "success",
-//             draggable: true
-//         });
-//     }
-// }
-
-export { getStoredApps, addToStoredDB, checkStoredDB };
+export { getStoredApps, addToStoredDB, checkStoredDB, storedAppInDB, removeFromLS };
