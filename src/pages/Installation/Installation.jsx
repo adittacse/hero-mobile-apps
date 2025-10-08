@@ -2,11 +2,14 @@ import { useLoaderData } from 'react-router';
 import InstalledApps from '../../components/InstalledApps/InstalledApps';
 import { getStoredApps, removeFromLS } from '../../utilities/addToDB';
 import { useEffect, useState } from 'react';
+import { BiSolidDownArrow } from "react-icons/bi";
 
 const Installation = () => {
     const [data, setData] = useState([]);
+    const [sortedApps, setSortedApps] = useState([]);
     const apps = useLoaderData();
 
+    // setting state installed apps id's
     useEffect(() => {
         const installedApps = getStoredApps();
         const convertedInstalledApps = installedApps.map(id => parseInt(id));
@@ -15,10 +18,30 @@ const Installation = () => {
 
     const filteredApps = apps.filter(app => data.includes(app.id));
 
+    // first time data load without sorting
+    useEffect(() => {
+        const appList = apps.filter(app => data.includes(app.id));
+        setSortedApps(appList);
+    }, [apps, data]);
+
     const handleAppUninstall = (id) => {
         removeFromLS(id);
         const newApps = data.filter(appId => appId !== id);
         setData(newApps);
+    }
+
+    const handleSort = (type) => {
+        if (type === "low-high") {
+            const sortedInstalledApps = [...filteredApps].sort((a, b) => 
+                a.downloads - b.downloads
+            );
+            setSortedApps(sortedInstalledApps);
+        } if (type === "high-low") {
+            const sortedInstalledApps = [...filteredApps].sort((a, b) => 
+                b.downloads - a.downloads
+            );
+            setSortedApps(sortedInstalledApps);
+        }
     }
     
     return (
@@ -30,12 +53,18 @@ const Installation = () => {
 
             <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0 mb-10">
                 <h4 className="font-semibold text-2xl">({data.length}) Apps Found</h4>
-                // sort by function will add here
+                <div className="dropdown dropdown-start">
+                    <div tabIndex={0} role="button" className="btn m-1">Sort By Size <BiSolidDownArrow /></div>
+                    <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
+                        <li onClick={() => handleSort("low-high")}><a>Low-High</a></li>
+                        <li onClick={() => handleSort("high-low")}><a>High-Low</a></li>
+                    </ul>
+                </div>
             </div>
 
             <div className="flex flex-col gap-4">
                 {
-                    filteredApps.map(app => <InstalledApps key={app.id} app={app} handleAppUninstall={handleAppUninstall} />)
+                    sortedApps.map(app => <InstalledApps key={app.id} app={app} handleAppUninstall={handleAppUninstall} />)
                 }
             </div>
         </div>
