@@ -3,8 +3,7 @@ import InstalledApps from '../../components/InstalledApps/InstalledApps';
 import { getStoredApps, removeFromLS } from '../../utilities/addToDB';
 import { useEffect, useState } from 'react';
 import { BiSolidDownArrow } from "react-icons/bi";
-import Loading from '../../components/Loading/Loading';
-import { toast, ToastContainer } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 
 const Installation = () => {
     const [data, setData] = useState([]);
@@ -54,9 +53,9 @@ const Installation = () => {
             </div>
 
             <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-0 mb-10">
-                <h4 className="font-semibold text-2xl">({data.length}) Apps Found</h4>
+                <h4 className="font-semibold text-2xl">({data.length}) Apps Installed</h4>
                 <div className="dropdown dropdown-start">
-                    <div tabIndex={0} role="button" className="btn m-1">Sort By Size <BiSolidDownArrow /></div>
+                    <div tabIndex={0} role="button" className="btn bg-white m-1">Sort By Size <BiSolidDownArrow /></div>
                     <ul tabIndex={0} className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
                         <li onClick={() => handleSort("low-high")}><a>Low-High</a></li>
                         <li onClick={() => handleSort("high-low")}><a>High-Low</a></li>
