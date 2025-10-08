@@ -1,14 +1,13 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import AppCard from '../../components/AppCard/AppCard';
 import Loading from '../../components/Loading/Loading';
 
 const Apps = () => {
     const apps = useLoaderData();
-
     const [loading, setLoading] = useState(true);
-    const [search, setSearch] = useState("");
     const [filtered, setFiltered] = useState(apps);
+    const searchRef = useRef(null);
 
     // loading time
     useEffect(() => {
@@ -18,27 +17,28 @@ const Apps = () => {
         }
     }, []);
 
-    // search
+    // new filtered data if new apps comes
     useEffect(() => {
-        const searchTitle = search.trim().toLowerCase();
+        setFiltered(apps);
+    }, [apps]);
 
-        if (searchTitle === "") {
-            setFiltered(apps);
-        } else {
-            const result = apps.filter(app => {
-                const title = app.title.toLowerCase();
-                return title.includes(searchTitle);
-            });
-            setFiltered(result);
-        }
-    }, [search, apps]);
-
+    // loading
     if (loading) {
         return <Loading />;
     }
+    
+    const handleSearch = () => {
+        const text = searchRef.current.value.trim().toLowerCase();
+        if (text === "") {
+            setFiltered(apps);
+        } else {
+            const result = apps.filter(app => app.title.toLowerCase().includes(text));
+            setFiltered(result);
+        }
+    };
 
     const handleShowAllApps = () => {
-        setSearch("");
+        searchRef.current.value = "";
         setFiltered(apps);
     }
 
@@ -59,7 +59,7 @@ const Apps = () => {
                             <path d="m21 21-4.3-4.3"></path>
                         </g>
                     </svg>
-                    <input value={search} onChange={(e) => setSearch(e.target.value)} type="search" required placeholder="Search Apps" />
+                    <input ref={searchRef} onChange={handleSearch} type="search" placeholder="Search Apps" />
                 </label>
             </div>
 
