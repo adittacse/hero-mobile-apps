@@ -7,6 +7,7 @@ import "./AppDetails.css";
 import { addToStoredDB, checkStoredDB } from '../../utilities/addToDB';
 import { useEffect, useState } from 'react';
 import NotFoundApp from '../NotFound/NotFoundApp';
+import { ToastContainer } from 'react-toastify';
 
 const AppDetails = () => {
     const [installed, setInstalled] = useState(false);
@@ -104,6 +105,8 @@ const AppDetails = () => {
                 <h4 className="font-semibold text-2xl text-[#001931] mb-6">Description</h4>
                 <p className="text-[#627382]">{description}</p>
             </div>
+            
+            <ToastContainer position="top-center" />
         </div>
     );
 };

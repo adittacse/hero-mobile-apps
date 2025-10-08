@@ -4,6 +4,7 @@ import { getStoredApps, removeFromLS } from '../../utilities/addToDB';
 import { useEffect, useState } from 'react';
 import { BiSolidDownArrow } from "react-icons/bi";
 import Loading from '../../components/Loading/Loading';
+import { toast, ToastContainer } from 'react-toastify';
 
 const Installation = () => {
     const [data, setData] = useState([]);
@@ -68,6 +69,7 @@ const Installation = () => {
                     sortedApps.map(app => <InstalledApps key={app.id} app={app} handleAppUninstall={handleAppUninstall} />)
                 }
             </div>
+            <ToastContainer position="top-center" />
         </div>
     );
 };

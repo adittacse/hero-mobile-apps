@@ -1,4 +1,4 @@
-// import Swal from 'sweetalert2';
+import { toast } from 'react-toastify';
 
 const getStoredApps = () => {
     const storedAppsSTR = localStorage.getItem("appsList");
@@ -15,34 +15,12 @@ const addToStoredDB = (id, title) => {
     const storedAppsData = getStoredApps();
 
     if (storedAppsData.includes(id)) {
-        alert(`${title} Already Installed`);
-        // Swal.fire({
-        //     title: "Book already read",
-        //     showClass: {
-        //         popup: `
-        //         animate__animated
-        //         animate__fadeInUp
-        //         animate__faster
-        //         `
-        //     },
-        //     hideClass: {
-        //         popup: `
-        //         animate__animated
-        //         animate__fadeOutDown
-        //         animate__faster
-        //         `
-        //     }
-        // });
+        toast(`${title} Already Installed`);
     } else {
         storedAppsData.push(id);
         const data = JSON.stringify(storedAppsData);
         localStorage.setItem("appsList", data);
-        alert(`${title} Installed Successfully`);
-        // Swal.fire({
-        //     title: "Added to read list",
-        //     icon: "success",
-        //     draggable: true
-        // });
+        toast(`${title} Installed Successfully`);
     }
 }
 
@@ -62,6 +40,7 @@ const removeFromLS = (id) => {
     const installedApps = getStoredApps();
     const apps = installedApps.filter(appId => parseInt(appId) !== id);
     localStorage.setItem("appsList", JSON.stringify(apps));
+    toast("App Uninstalled");
 }
 
 export { getStoredApps, addToStoredDB, checkStoredDB, storedAppInDB, removeFromLS };
