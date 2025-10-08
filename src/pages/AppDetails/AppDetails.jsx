@@ -1,4 +1,4 @@
-import { Link, useLoaderData, useParams } from 'react-router';
+import { useLoaderData, useParams } from 'react-router';
 import downloadIcon from "../../assets/icon-downloads.png";
 import ratingsIcon from "../../assets/icon-ratings.png";
 import reviewIcon from "../../assets/icon-review.png";

@@ -8,7 +8,6 @@ import Loading from '../../components/Loading/Loading';
 const Installation = () => {
     const [data, setData] = useState([]);
     const [sortedApps, setSortedApps] = useState([]);
-    const [loading, setLoading] = useState(true);
     const apps = useLoaderData();
 
     // setting state installed apps id's
@@ -24,7 +23,6 @@ const Installation = () => {
     useEffect(() => {
         const appList = apps.filter(app => data.includes(app.id));
         setSortedApps(appList);
-        setLoading(false);
     }, [apps, data]);
 
     const handleAppUninstall = (id) => {
@@ -45,10 +43,6 @@ const Installation = () => {
             );
             setSortedApps(sortedInstalledApps);
         }
-    }
-
-    if (loading) {
-        return <Loading />
     }
     
     return (

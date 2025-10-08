@@ -1,31 +1,16 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import AppCard from '../../components/AppCard/AppCard';
-import Loading from '../../components/Loading/Loading';
 
 const Apps = () => {
     const apps = useLoaderData();
-    const [loading, setLoading] = useState(true);
     const [filtered, setFiltered] = useState(apps);
     const searchRef = useRef(null);
-
-    // loading time
-    useEffect(() => {
-        const time = setTimeout(() => setLoading(false), 600);
-        return () => {
-            clearTimeout(time);
-        }
-    }, []);
 
     // new filtered data if new apps comes
     useEffect(() => {
         setFiltered(apps);
     }, [apps]);
-
-    // loading
-    if (loading) {
-        return <Loading />;
-    }
     
     const handleSearch = () => {
         const text = searchRef.current.value.trim().toLowerCase();
