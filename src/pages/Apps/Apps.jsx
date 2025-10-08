@@ -1,30 +1,35 @@
 import { useEffect, useRef, useState } from 'react';
 import { useLoaderData } from 'react-router';
 import AppCard from '../../components/AppCard/AppCard';
+import Loading from '../../components/Loading/Loading';
 
 const Apps = () => {
     const apps = useLoaderData();
     const [filtered, setFiltered] = useState(apps);
+    const [loading, setLoading] = useState(false);
     const searchRef = useRef(null);
-
-    // new filtered data if new apps comes
+    
     useEffect(() => {
         setFiltered(apps);
     }, [apps]);
     
     const handleSearch = () => {
+        setLoading(true);
         const text = searchRef.current.value.trim().toLowerCase();
         if (text === "") {
             setFiltered(apps);
+            setLoading(false);
         } else {
             const result = apps.filter(app => app.title.toLowerCase().includes(text));
             setFiltered(result);
+            setLoading(false);
         }
     };
 
     const handleShowAllApps = () => {
         searchRef.current.value = "";
         setFiltered(apps);
+        setLoading(false);
     }
 
     return (
@@ -48,8 +53,13 @@ const Apps = () => {
                 </label>
             </div>
 
-            {
-                filtered.length === 0 ? (
+            { 
+                loading ? (
+                    <div className="grid place-items-center min-h-36 mt-10">
+                        {console.log("loading working")}
+                        <Loading />
+                    </div>
+                ) : (filtered.length === 0 ? (
                     <div className="flex flex-col justify-center items-center min-h-36">
                         <h3 className="font-bold text-4xl text-[#627382] mt-10 mb-6">No Apps Found</h3>
                         
@@ -63,7 +73,7 @@ const Apps = () => {
                             filtered.map(app => <AppCard key={app.id} app={app} />)
                         }
                     </div>
-                )
+                ))
             }
         </div>
     );
