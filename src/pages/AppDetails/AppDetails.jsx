@@ -76,7 +76,7 @@ const AppDetails = () => {
                             </div>
                         </div>
 
-                        <button onClick={handleInstallNow} disabled={installed === true} className="btn bg-[#00D390] text-white w-fit mb-[30px]">{installed ? "Installed" : `Install Now (${size} MB)`}</button>
+                        <button onClick={handleInstallNow} disabled={installed === true} className="btn bg-[#00D390] disabled:!bg-[#00D390] text-white w-fit mb-[30px]">{installed ? "Installed" : `Install Now (${size} MB)`}</button>
                     </div>
                 </div>
             </div>
