@@ -4,10 +4,20 @@ import ratingsIcon from "../../assets/icon-ratings.png";
 import reviewIcon from "../../assets/icon-review.png";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer } from 'recharts';
 import "./AppDetails.css";
+import { addToStoredDB, checkStoredDB } from '../../utilities/addToDB';
+import { useEffect, useState } from 'react';
 
 const AppDetails = () => {
+    const [installed, setInstalled] = useState(false);
     const { id } = useParams();
     const apps = useLoaderData();
+
+    useEffect(() => {
+        const foundAppData = checkStoredDB(id);
+        if (foundAppData) {
+            setInstalled(true);
+        }
+    }, [id]);
 
     const appDetails = apps.find(app => app.id === parseInt(id));
     
@@ -21,13 +31,18 @@ const AppDetails = () => {
     
     const sortedRatingData = ratingData.sort((a, b) => parseInt(b.name) - parseInt(a.name));
 
+    const handleInstallNow = () => {
+        addToStoredDB(id, title);
+        setInstalled(true);
+    }
+
     return (
         <div className="py-20 px-4 md:px-10 lg:px-20">
             <div className="my-hero">
                 <div className="flex flex-col lg:flex-row gap-[30px] ">
                     {/* <img src={image} className="max-w-sm rounded-lg" /> */}
-                    <div className=" rounded-2xl flex justify-center items-center shrink-0">
-                        <img src={image} className="max-w-sm w-[50%] rounded-lg" />
+                    <div className="flex justify-center items-center shrink-0">
+                        <img src={image} className="max-w-sm rounded-lg" />
                     </div>
                     <div className="flex flex-col flex-1 w-full min-w-0">
                         <h1 className="text-5xl font-bold mb-3">{title}</h1>
@@ -55,7 +70,7 @@ const AppDetails = () => {
                             </div>
                         </div>
 
-                        <button className="btn bg-[#00D390] text-white w-fit mb-[30px]">Install Now ({size} MB)</button>
+                        <button onClick={handleInstallNow} disabled={installed === true} className="btn bg-[#00D390] text-white w-fit mb-[30px]">{installed ? "Installed" : `Install Now (${size} MB)`}</button>
                     </div>
                 </div>
             </div>
