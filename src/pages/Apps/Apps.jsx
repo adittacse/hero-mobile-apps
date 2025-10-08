@@ -37,6 +37,11 @@ const Apps = () => {
         return <Loading />;
     }
 
+    const handleShowAllApps = () => {
+        setSearch("");
+        setFiltered(apps);
+    }
+
     return (
         <div className="py-20 px-4 md:px-10 lg:px-20">
             <div className="text-center mb-11">
@@ -54,14 +59,18 @@ const Apps = () => {
                             <path d="m21 21-4.3-4.3"></path>
                         </g>
                     </svg>
-                    <input defaultValue={search} onChange={(e) => setSearch(e.target.value)} type="search" required placeholder="Search Apps" />
+                    <input value={search} onChange={(e) => setSearch(e.target.value)} type="search" required placeholder="Search Apps" />
                 </label>
             </div>
 
             {
                 filtered.length === 0 ? (
                     <div className="flex flex-col justify-center items-center min-h-36">
-                        <h3 className="font-bold text-4xl text-[#627382] mt-10">No Apps Found</h3>
+                        <h3 className="font-bold text-4xl text-[#627382] mt-10 mb-6">No Apps Found</h3>
+                        
+                        <button onClick={handleShowAllApps} className="btn font-semibold text-white bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)] rounded-sm px-[39px] py-[15px]">
+                            Show All
+                        </button>
                     </div>
                 ) : (
                     <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10 mb-10">

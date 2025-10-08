@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
-import { Link } from 'react-router';
 import AppCard from '../AppCard/AppCard';
+import { Link } from 'react-router';
 
 const TrendingApps = ({ data }) => {
     const firstEightData = data.slice(0, 8);
