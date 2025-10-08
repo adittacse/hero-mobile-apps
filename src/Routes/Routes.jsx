@@ -4,7 +4,7 @@ import Home from "../pages/Home/Home";
 import Apps from "../pages/Apps/Apps";
 import AppDetails from "../pages/AppDetails/AppDetails";
 import Installation from "../pages/Installation/Installation";
-import NotFound from "../pages/NotFound/NotFound";
+import NotFoundPage from "../pages/NotFound/NotFoundPage";
 
 const router = createBrowserRouter([
     {
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "*",
-                element: <NotFound></NotFound>
+                element: <NotFoundPage></NotFoundPage>
             }
         ]
     },

@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router';
 import notFoundImage from "../../assets/error-404.png"
 
-const NotFound = () => {
+const NotFoundPage = () => {
     const navigate = useNavigate();
     return (
         <div className="grid place-items-center text-center min-h-screen py-20 px-4 md:px-10 lg:px-20">
@@ -15,4 +15,4 @@ const NotFound = () => {
     );
 };
 
-export default NotFound;
+export default NotFoundPage;
