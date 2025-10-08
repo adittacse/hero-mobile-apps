@@ -1,6 +1,7 @@
 import googlePlayStore from "../../assets/google-play-store.png";
 import appleAppStore from "../../assets/apple-app-store.png";
 import bannerImage from "../../assets/hero.png";
+import { Link } from "react-router";
 
 const Banner = () => {
     return (
@@ -9,15 +10,15 @@ const Banner = () => {
             <p className="text-[#627382] mb-10 px-3.5 md:px-0">At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and more exciting. <br />Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
 
             <div className="flex justify-center gap-4 mb-10">
-                <button className="btn bg-white text-black border-[#e5e5e5] py-6 px-[22px] gap-4">
+                <Link target="_blank" to="https://play.google.com/" className="btn bg-white text-black border-[#e5e5e5] py-6 px-[22px] gap-4">
                     <img className="w-8 h-8" src={googlePlayStore} alt="google play store" />
                     Google Play
-                </button>
+                </Link>
 
-                <button className="btn bg-white text-black border-[#e5e5e5] py-6 px-[22px] gap-4">
+                <Link target="_blank" to="https://www.apple.com/app-store/" className="btn bg-white text-black border-[#e5e5e5] py-6 px-[22px] gap-4">
                     <img className="w-8 h-8" src={appleAppStore} alt="google play store" />
                     App Store
-                </button>
+                </Link>
             </div>
 
             <img className="w-[90%] md:w-[60%] text-center flex mx-auto" src={bannerImage} alt="banner image" />

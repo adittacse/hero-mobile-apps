@@ -16,7 +16,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "apps",
-                loader:  () =>  fetch("https://raw.githubusercontent.com/adittacse/bottles-data/refs/heads/main/AppsData.json").then(res => res.json()),
+                loader: () => fetch("/data.json").then(res => res.json()),
                 element: <Apps></Apps>
             }
         ]
