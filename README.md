@@ -16,4 +16,5 @@ I created a single page React application (SPA) that showcases a list of apps. T
 * **DaisyUI** for awesome UI design using it's components
 * **Recharts** to show app ratings
 * **react‑icons** to show icons where it needed
+* **react‑toastify** to show notification for app management
 * **LocalStorage** to manage installed apps
