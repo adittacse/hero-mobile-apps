@@ -49,7 +49,7 @@ const AppDetails = () => {
             <div className="my-hero">
                 <div className="flex flex-col lg:flex-row gap-[30px] ">
                     <div className="flex justify-center items-center shrink-0">
-                        <img src={image} className="max-w-sm shadow-2xl rounded-lg" />
+                        <img src={image} alt="app image" className="max-w-sm shadow-2xl rounded-lg" />
                     </div>
                     <div className="flex flex-col flex-1 w-full min-w-0">
                         <h1 className="text-5xl font-bold mb-3">{title}</h1>

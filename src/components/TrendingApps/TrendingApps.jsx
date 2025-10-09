@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import AppCard from '../AppCard/AppCard';
 import { Link } from 'react-router';
+import Loading from '../Loading/Loading';
 
 const TrendingApps = ({ data }) => {
     const firstEightData = data.slice(0, 8);
@@ -11,7 +12,7 @@ const TrendingApps = ({ data }) => {
             <p className="text-[20px] text-[#627382] mb-10">Explore All Trending Apps on the Market developed by us</p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-10 mb-10">
-                <Suspense fallback={<p>Loading...</p>}>
+                <Suspense fallback={<Loading />}>
                     {
                         firstEightData.map(app => <AppCard key={app.id} app={app} />)
                     }

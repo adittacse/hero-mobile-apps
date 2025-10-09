@@ -10,7 +10,7 @@ const NotFoundPage = () => {
             <p className="text-[#627382] mb-4">
                 The page you are looking for is not available.
             </p>
-            <button onClick={() => navigate(-1)} className="btn font-semibold text-white bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)] rounded-sm">Go Back!</button>
+            <button onClick={() => navigate(-1)} className="btn font-semibold text-white bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)] rounded-sm px-10 py-4">Go Back!</button>
         </div>
     );
 };

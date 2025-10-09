@@ -9,7 +9,7 @@ const NotFoundApp = () => {
             <p className="text-[#627382] mb-4">
                 The app you are looking for does not exist or has been removed.
             </p>
-            <Link to="/" className="btn font-semibold text-white bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)] rounded-sm">Back to Home</Link>
+            <Link to="/" className="btn font-semibold text-white bg-[linear-gradient(90deg,#632EE3_0%,#9F62F2_100%)] rounded-sm px-10 py-4">Back to Home</Link>
         </div>
     );
 };

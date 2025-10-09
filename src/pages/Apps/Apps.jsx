@@ -62,7 +62,6 @@ const Apps = () => {
             { 
                 loading ? (
                     <div className="grid place-items-center min-h-36 mt-10">
-                        {console.log("loading working")}
                         <Loading />
                     </div>
                 ) : (filtered.length === 0 ? (
