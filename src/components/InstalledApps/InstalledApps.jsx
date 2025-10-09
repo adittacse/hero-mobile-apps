@@ -7,7 +7,7 @@ const InstalledApps = ({ app, handleAppUninstall }) => {
 
     return (
         <div className="bg-white rounded-lg p-4">
-            <div className="flex flex-col items-center justify-between lg:flex-row">
+            <div className="flex flex-col md:flex-row items-center justify-between">
                 <div className="flex items-center">
                     <img className="w-24 h-20 mr-4 rounded-2xl" src={image} alt="app image" />
                     <div>
