@@ -16,20 +16,26 @@ const Apps = () => {
     const handleSearch = () => {
         setLoading(true);
         const text = searchRef.current.value.trim().toLowerCase();
-        if (text === "") {
-            setFiltered(apps);
-            setLoading(false);
-        } else {
-            const result = apps.filter(app => app.title.toLowerCase().includes(text));
-            setFiltered(result);
-            setLoading(false);
-        }
+
+        setTimeout(() => {
+            if (text === "") {
+                setFiltered(apps);
+                setLoading(false);
+            } else {
+                const result = apps.filter(app => app.title.toLowerCase().includes(text));
+                setFiltered(result);
+                setLoading(false);
+            }
+        }, 0);
     };
 
     const handleShowAllApps = () => {
         searchRef.current.value = "";
-        setFiltered(apps);
-        setLoading(false);
+        setLoading(true);
+        setTimeout(() => {
+            setFiltered(apps);
+            setLoading(false);
+        }, 0);
     }
 
     return (
