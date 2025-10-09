@@ -11,7 +11,7 @@ const InstalledApps = ({ app, handleAppUninstall }) => {
                 <div className="flex items-center">
                     <img className="w-24 h-20 mr-4 rounded-2xl" src={image} alt="app image" />
                     <div>
-                        <Link to={`/app/${id}`}>
+                        <Link to={`/app-details/${id}`}>
                             <h1 className="text-[20px] font-medium mb-4">{title}</h1>
                         </Link>
                         <div className="flex items-center gap-4">
